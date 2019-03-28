@@ -48,11 +48,13 @@ You can even just run a simgle command buy doing
 To retrive a file from the container you can do
 
 		$ lxc file pull grus/etc/hosts .
+
 > This will copy the file in **/etc/hosts** from the container **grus** and place it in the current directory of the host
 
 To push a file to the container you can do
 
 		$ lxd file push hosts grus/etc/
+
 > This will copy the file **hosts** from the folder **/etc/** of the container **grus**
 
 ## Stopping and removing the container
