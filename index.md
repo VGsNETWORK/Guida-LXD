@@ -40,12 +40,12 @@ You can limit the container cpu for example by the number of cores or by the per
    
      lxc config set grus limits.cpu 2
      
-  #### Limit CPU by percentage
+#### Limit CPU by percentage
 
     lxc config set grus limits.cpu.allowance 20%
 
 
-### Limit RAM usage
+#### Limit RAM usage
 
     lxc config set grus limits.memory 4096MB
 
