@@ -31,6 +31,26 @@ Creating a container it's really easy, we just use the alias that we get from th
 
 >Note that **grus** it's the hostname of the mahcine
 
+## Configure container
+
+### Limit CPU
+You can limit the container cpu for example by the number of cores or by the percentage of cpu to use
+
+#### Limit CPU by number of cores
+   
+     lxc config set grus limits.cpu 2
+     
+  #### Limit CPU by percentage
+
+    lxc config set grus limits.cpu.allowance 20%
+
+
+### Limit RAM usage
+
+    lxc config set grus limits.memory 4096MB
+
+>Note: you can also specify the ram usage in kB/GB/TB
+
 ## Launching the container
 After we create the container you can enter it with a shell using
 
@@ -65,3 +85,4 @@ To stop the container you can do
 And to delete it use
 
 		$ lxc delete grus
+
