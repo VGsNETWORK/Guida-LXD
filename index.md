@@ -38,16 +38,16 @@ You can limit the container cpu for example by the number of cores or by the per
 
 #### Limit CPU by number of cores
    
-     lxc config set grus limits.cpu 2
+               $ lxc config set grus limits.cpu 2
      
 #### Limit CPU by percentage
 
-    lxc config set grus limits.cpu.allowance 20%
+               $ lxc config set grus limits.cpu.allowance 20%
 
 
 ### Limit RAM usage
 
-    lxc config set grus limits.memory 4096MB
+               $ lxc config set grus limits.memory 4096MB
 
 >Note: you can also specify the ram usage in kB/GB/TB
 
@@ -60,7 +60,7 @@ After we create the container you can enter it with a shell using
 
 You can even just run a simgle command buy doing
 
-        $ lxc exec grus -- apt-get update
+                $ lxc exec grus -- apt-get update
 
 >Note that we use **apt-get update** cause in the previous commands we used a debian distro
 
@@ -75,7 +75,7 @@ To push a file to the container you can do
 
 		$ lxd file push hosts grus/etc/
 
-> This will copy the file **hosts** from the folder **/etc/** of the container **grus**
+> This will copy the file **hosts** to the folder **/etc/** of the container **grus**
 
 ## Stopping and removing the container
 To stop the container you can do
